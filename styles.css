@@ -1,0 +1,227 @@
+
+body {
+  padding: 0px;
+  margin: 0px;
+    font-family: 'Segoe UI';
+    font-size: 1.6rem;
+    background-color: #171a21;
+  }
+
+
+#header-img{
+  width: 5%;
+}
+
+nav{
+  font-size: 2rem;
+  padding-bottom: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+  padding-right: 30px;
+  list-style: none;
+}
+
+a{
+  color: #171a21;
+}
+
+.canciones-h1, .textoTheFeels, .textoSwitchToMe{
+  color: white;
+  text-align: center;
+}
+
+/* Seccion de videos*/
+.videos{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+/* Seccion de albumes*/
+
+
+.albumes-disponibles{ /* h1 titulo */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.container-albumes{
+  height: auto;
+  padding: 0px 20px 0px 20px;
+  display:grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.twice-album-img{
+  height: auto;
+  width: 300px;
+}
+
+.descripcion-albumes{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Section form */
+#section-form{
+  height: auto;
+  text-align: center;
+}
+
+.form-img-email{
+  width: 60%;
+}
+
+.form-design{
+ display:grid;
+ grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+ text-align: center;
+ padding: 10px 0px 20px 0px;
+}
+
+.form-design-h1{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.form-email{
+  color: white;
+  padding: 0px 100px 0px 0px;
+}
+
+.form-email-p{
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.label-email{
+  font-size: 2vw;
+}
+/* Footer*/
+
+footer{
+  background-color: azure;
+  display: flex;
+  height: 200px;
+
+  padding: 0px 300px 0px 300px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.7vw;
+}
+
+@media (max-width: 1000px) {
+
+  .section-inicio{
+    padding: 0px 5px 0px 5px;
+  }
+
+  .container-albumes{
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: auto auto;
+  }
+
+  .form-design, .form-email{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .form-design{
+    margin: 0px;
+    padding: 0px;
+    grid-template-columns: 300px 300px;
+  }
+
+  .form-img-email{
+    width: 30%;
+  }
+
+  .form-email-p{
+    font-size: 2vw;
+  }
+
+  footer{
+    padding:0px;
+    text-align: center;
+    height: 200px;
+    font-size: 2.5vw;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  #header-img{
+    width: 15%;
+  }
+
+  nav{
+    justify-content: start;
+    padding:0px;
+    font-size: 4.5vw;
+  }
+
+  .videos{
+    margin-left: 50px;
+    text-align:start;
+  }
+
+  .container-albumes{
+    display: inline;
+    padding: 0px;
+  }
+
+  .twice-album-img{
+  
+    width: 350px;
+  }
+
+  .descripcion-albumes{
+    padding: 0px 5px 0px 5px;
+    margin-top: -20px;
+
+    font-size: 4vw;
+  }
+
+  .form-design{
+    margin: 0px;
+    display: inline;
+    padding: 0px 10px 0px 0px;
+  }
+
+  .form-design-h1{
+    font-size: 6vw;
+  }
+
+  .form-img-email{
+    width: 40%;
+  }
+
+  .form-email-p{
+    font-size: 5vw;
+  }
+
+  .label-email{
+    font-size: 5vw;
+  }
+
+  footer{
+    font-size: 3.4vw;
+  }
+
+}
